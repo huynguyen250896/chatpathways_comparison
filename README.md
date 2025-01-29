@@ -6,7 +6,7 @@ The three Alzheimer's disease datasets, *GSE5281*, *GSE61196*, and *GSE153873*, 
 
 # 🚀 QUICK START
 
-Below we will reproduce results for the evaluation tasks shown in the work.
+Below, we reproduce the results for the evaluation tasks presented in this study
 
 Users should make sure they have [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed already.
 
@@ -15,7 +15,7 @@ Users should make sure they have [Docker Desktop](https://www.docker.com/product
 # If you are users with a Linux/MAC computer, open your terminal
 # If you are users with a Windows computer, open your Windows Powershell
 cd Desktop                              
-git clone https://github.com/hauldhut/chatpathways_comparison
+git clone https://github.com/huynguyen250896/chatpathways_comparison
 cd chatpathways_comparison
 ```
 
