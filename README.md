@@ -32,7 +32,7 @@ OPENAI_API_KEY= [YOUR OPEN API KEY]
 docker-compose up --build
 ```
 
-**Step 4:** Users must pull large language models to their local machine. For each model, open a new terminal, run the following commands, and KEEP the terminal open while running comparisons:
+**Step 4:** Users must pull large language models to their local machine. For each model, open a new terminal, run the respective command, and KEEP the terminals open while running comparisons:
 ```
 # pull Phi3.5 to the local machine
 docker exec -it ollama ollama run phi3.5
@@ -45,10 +45,14 @@ docker exec -it ollama ollama run llama3.1
 ```
 Note: To explore other large language models, visit the [official Ollama website](https://ollama.com/search)
 
-**Step 5:** Access the ChatPathways container locally using: 
-`docker exec -it chatpathways_container bash` 
+**Step 5:**  Open a new terminal and users can access the ChatPathways container using: 
+```
+docker exec -it chatpathways_container bash
+``` 
 Then, run the evaluation tasks with:
-`python3 llm_comparison.py`
+```
+python3 llm_comparison.py
+``` 
 
 # License
 
