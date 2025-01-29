@@ -1,0 +1,9 @@
+python-multipart==0.0.6
+pandas==2.1.1
+numpy==1.25.0
+python-dotenv==1.0.0
+protobuf==4.21.5
+duckduckgo_search==7.1.0
+httpx==0.28.1
+requests==2.32.3
+ollama==0.4.7

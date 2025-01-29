@@ -1,0 +1,38 @@
+services:
+  chatpathways:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: chatpathways_container
+    image: chatpathways_container:v1.0.0
+    privileged: true
+    ports:
+      - 8005:5000
+    volumes:
+      - ./:/workspace
+    tty: true
+    stdin_open: true
+    restart: always
+    networks:
+      - chatpathways-network
+
+  ollama:
+    image: ollama/ollama
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+    restart: unless-stopped
+    networks:
+      - chatpathways-network
+
+volumes:
+  ollama:
+    driver: local 
+
+networks:
+  chatpathways-network:
+    driver: bridge
+    ipam:
+      driver: default
