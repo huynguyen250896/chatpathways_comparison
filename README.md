@@ -1,6 +1,6 @@
 # ChatPathways
 
-The code and data repository of "A biologist-oriented research assistant for system-level data analysis with substantially mitigated hallucinations".
+The code and data repository of "A biologist-oriented research assistant for pathway-level analysis with substantially mitigated hallucinations".
 
 The three Alzheimer's disease datasets, *GSE5281*, *GSE61196*, and *GSE153873*, were downloaded from NCBI GEO and used as example datasets in this study. Users can access these datasets, along with example data generated in this work by unzipping the file `unzip-me.zip`.
 
